@@ -2,7 +2,7 @@ import React from "react";
 
 import { Centered } from "meteor/empirica:core";
 
-export default class InstructionStepTwo extends React.Component {
+export default class ExampleTaskPair extends React.Component {
   render() {
     const { hasPrev, hasNext, onNext, onPrev } = this.props;
     return (
@@ -10,10 +10,10 @@ export default class InstructionStepTwo extends React.Component {
         <div className="instructions">
           <h1> Instructions 2 </h1>
           <p>
-            In this experiment, you are going to work with another tuker to write the story together. 
-
-            Each of you will play one character in the scenario and decrible your own actions. 
-            
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio,
+            animi? Quae autem asperiores officiis voluptatum fuga recusandae
+            minima! Animi pariatur ex sapiente laborum. Ipsa quo quia ab,
+            veritatis et labore.
           </p>
 
           <p>

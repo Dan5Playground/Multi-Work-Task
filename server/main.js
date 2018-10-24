@@ -3,6 +3,9 @@ import Empirica from "meteor/empirica:core";
 import "./callbacks.js";
 import "./bots.js";
 
+// import the constant values for all the factors
+import { SceneSettings } from "./constants";
+
 // gameInit is where the structure of a game is defined.
 // Just before every game starts, once all the players needed are ready, this
 // function is called with the treatment and the list of players.
@@ -19,16 +22,27 @@ Empirica.gameInit((game, treatment, players) => {
         _.pluck(players, "id")
     );
   players.forEach((player, i) => {
+    // Dan : create avatar for each player using jdenticon.com/#icon-D3
     player.set("avatar", `/avatars/jdenticon/${player._id}`);
     player.set("score", 0);
   });
 
-  _.times(10, i => {
+  // Dan : Q? Why not using treament directly but use 
+  // game.treatment to access the data 
+  let numRounds = 1;
+  if (game.treatment.nRounds > 0)
+  {
+    numRounds = game.treatment.nRound;
+  }
+  _.times(numRounds, i => {
     const round = game.addRound();
-    round.addStage({
-      name: "response",
-      displayName: "Response",
-      durationInSeconds: 120
+    round.set("task", "manipulative");
+    const stage = round.addStage({
+      name: "writing",
+      displayName: "writing",
+      // Dan : 30 mins per rounds? Maybe change it to var later
+      durationInSeconds: 30 * 60 
     });
+    //stage.set("task", "manipulative");
   });
 });

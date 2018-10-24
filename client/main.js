@@ -17,10 +17,18 @@ Empirica.consent(Consent);
 // At this point they have been assigned a treatment. You can return
 // different instruction steps depending on the assigned treatment.
 Empirica.introSteps((game, treatment) => {
-  const steps = [InstructionStepOne];
-  if (treatment.playerCount > 1) {
-    steps.push(InstructionStepTwo);
-  }
+
+  const steps = [];
+  // Dan : skip instruction when showInstruction was set to false 
+  if (treatment.showInstruction){
+	  if (treatment.playerCount > 1) {
+	    steps.push(InstructionStepTwo);
+	  }
+	  else
+	  {
+	  	steps.push(InstructionStepOne);
+	  }
+	}
   steps.push(Quiz);
   return steps;
 });

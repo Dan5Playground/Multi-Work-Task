@@ -11,9 +11,8 @@ export default class Round extends React.Component {
     return (
       <div className="round">
         <div className="content">
-          <PlayerProfile player={player} stage={stage} game={game} />
-          <Task game={game} round={round} stage={stage} player={player} />
-          <SocialExposure stage={stage} player={player} game={game} />
+        <Task game={game} round={round} stage={stage} player={player} />
+        
         </div>
       </div>
     );
