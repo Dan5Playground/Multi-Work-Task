@@ -1,14 +1,18 @@
 import { render } from "react-dom";
 
+import "@blueprintjs/icons/lib/css/blueprint-icons.css";
+import "@blueprintjs/core/lib/css/blueprint.css";
+
 import Empirica from "meteor/empirica:core";
 
-import Round from "./game/Round";
-import Consent from "./intro/Consent";
-import InstructionStepOne from "./intro/InstructionStepOne";
-import InstructionStepTwo from "./intro/InstructionStepTwo";
-import Quiz from "./intro/Quiz";
-import ExitSurvey from "./exit/ExitSurvey";
-import Thanks from "./exit/Thanks";
+import Consent from "./intro/Consent.jsx";
+import ExitSurvey from "./exit/ExitSurvey.jsx";
+import Overview from "./intro/Overview.jsx"
+import SimpleQuiz from "./intro/SimpleQuiz.jsx";
+
+import Round from "./game/Round.jsx";
+import Thanks from "./exit/Thanks.jsx";
+import Sorry from "./exit/Sorry";
 
 // Set the Consent Component you want to present players (optional).
 Empirica.consent(Consent);
@@ -17,19 +21,8 @@ Empirica.consent(Consent);
 // At this point they have been assigned a treatment. You can return
 // different instruction steps depending on the assigned treatment.
 Empirica.introSteps((game, treatment) => {
-
-  const steps = [];
-  // Dan : skip instruction when showInstruction was set to false 
-  if (treatment.showInstruction){
-	  if (treatment.playerCount > 1) {
-	    steps.push(InstructionStepTwo);
-	  }
-	  else
-	  {
-	  	steps.push(InstructionStepOne);
-	  }
-	}
-  steps.push(Quiz);
+  const steps = [Overview]
+    steps.push(SimpleQuiz);
   return steps;
 });
 
@@ -47,7 +40,12 @@ Empirica.round(Round);
 // If you don't return anything, or do not define this function, a default
 // exit screen will be shown.
 Empirica.exitSteps((game, player) => {
-  return [ExitSurvey, Thanks];
+  if (player.exitStatus !== "finished") {
+    return [Sorry];
+  }
+
+    return [ExitSurvey, Thanks];
+
 });
 
 // Start the app render tree.
