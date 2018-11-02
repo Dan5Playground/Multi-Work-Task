@@ -44,3 +44,8 @@ export const SceneSettings = [
     }
 
 ];
+
+
+export const rdmPrompt = [
+    "ambitious", "ethical", "dedicated", "manipulative", "self-interested", "arrogant"
+];

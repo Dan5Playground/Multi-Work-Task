@@ -8,25 +8,6 @@ import { SceneSettings } from "./constants";
 // the game.
 Empirica.onGameStart((game, players) => {
   console.debug("game ", game._id, " started");
-    let charNames = [];
-    let charPrompts = {};
-    SceneSettings[0].characters.forEach((character,i) => {
-        charNames.push(character.name);
-        charPrompts[character.name] = character.prompt;
-    });
-
-// for the players names to match avatar color
-    // to do more go to https://jdenticon.com/#icon-D3
-    const avatarNames = ["Colton", "Aaron"];
-    // similar to the color of the avatar
-    const nameColor = ["#3D50B7", "#70A945"];
-
-    players.forEach((player, i) => {
-        player.set("name", charNames[i]);
-        player.set("avatar", `/avatars/jdenticon/${avatarNames[i]}`);
-        player.set("nameColor", nameColor[i]);
-        player.set("bonus", 0);
-    });
 });
 
 // onRoundStart is triggered before each round starts, and before onStageStart.
@@ -42,6 +23,11 @@ Empirica.onStageStart((game, round, stage, players) => {
   console.debug("stage ", stage.name, "of game", game._id, " started");
   // after each stage, reset the content of the chat
   stage.set("chat", []);
+    // Dan : reset the satisfied value
+    players.forEach(player => {
+        player.set("satisfied", false);
+    });
+
 
 });
 
@@ -49,7 +35,7 @@ Empirica.onStageStart((game, round, stage, players) => {
 // It receives the same options as onRoundEnd, and the stage that just ended.
 Empirica.onStageEnd((game, round, stage, players) => {
 
-  console.debug("Satge ", stage.name, "game", game._id, " ended");
+  console.debug("Stage ", stage.name, "game ", game._id, " ended");
 
 });
 
@@ -88,7 +74,7 @@ Empirica.onGameEnd((game, players) => {
 // // onSet is called when the experiment code call the .set() method
 // // on games, rounds, stages, players, playerRounds or playerStages.
 // Dan : don't need to check anything. comment it out for performance
-/*Empirica.onSet((
+Empirica.onSet((
   game,
   round,
   stage,
@@ -114,55 +100,8 @@ Empirica.onGameEnd((game, players) => {
     }
     return;
   }
-
-  //someone placed a student to a room
-  if (key.substring(0, 8) === "student-" && key.slice(-4) === "room") {
-    const task = stage.get("task");
-    let assignments = { deck: [] };
-    task.rooms.forEach(room => {
-      assignments[room] = [];
-    });
-
-    //find the rooms for each player
-    task.students.forEach(student => {
-      const room = stage.get(`student-${student}-room`);
-      assignments[room].push(student);
-    });
-
-
-
-    //check for constraint violations
-    const violationIds = getViolations(stage, assignments);
-    stage.set("violatedConstraints", violationIds);
-
-    //get score if there are no violations, otherwise, the score is 0
-    const currentScore =
-      assignments["deck"].length === 0
-        ? getScore(task, assignments, violationIds.length)
-        : 0;
-    //console.debug("currentScore", currentScore);
-    stage.set("score", currentScore || 0);
-
-    if (currentScore === task.optimal) {
-      stage.set("optimalFound", true);
-    }
-
-    //keep track of solution, scores, and violated constraints
-    //TODO: eventually this should have the 'log' parameter so it is not sent to the UI
-    //TODO: how about I store everything here, and that's it! less data
-    stage.append("intermediateSolutions", {
-      solution: assignments,
-      at: new Date(),
-      violatedConstraintsIds: violationIds,
-      nConstraintsViolated: violationIds.length,
-      score: getScore(task, assignments, violationIds.length),
-      optimalFound: currentScore === task.optimal,
-      completeSolution: assignments["deck"].length === 0,
-      completeSolutionScore: currentScore
-    });
-  }
 });
-*/
+
 //helpers
 /*function getScore(task, assignments, nViolations) {
   let score = 0;

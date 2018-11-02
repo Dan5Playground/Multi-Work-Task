@@ -1,0 +1,100 @@
+treatments:
+  - name: solo_single_debug
+    factorIds:
+      - xjQjs6fzfpYDTGfwo
+      - 3aNnE7LLy33YXQgwQ
+      - vFoWs24JoC9TetLdm
+  - name: solo_multi_debug
+    factorIds:
+      - xjQjs6fzfpYDTGfwo
+      - 3aNnE7LLy33YXQgwQ
+      - XrEEtF2oHLEAARtch
+  - name: pair
+    factorIds:
+      - ejhZfJ8E4k6iAGmcR
+  - name: pair_multi_debug
+    factorIds:
+      - ejhZfJ8E4k6iAGmcR
+      - 3aNnE7LLy33YXQgwQ
+      - XrEEtF2oHLEAARtch
+  - name: solo_multi_prompt_debug
+    factorIds:
+      - xjQjs6fzfpYDTGfwo
+      - 3aNnE7LLy33YXQgwQ
+      - XrEEtF2oHLEAARtch
+      - 4QqXEjtqvLt8SMRP9
+  - name: pair_multi_prompt_debug
+    factorIds:
+      - ejhZfJ8E4k6iAGmcR
+      - 3aNnE7LLy33YXQgwQ
+      - XrEEtF2oHLEAARtch
+      - 4QqXEjtqvLt8SMRP9
+factorTypes:
+  - _id: f32f7HPGCuhjfXMMY
+    name: playerCount
+    description: The Number of players participating in the given game.
+    required: true
+    type: Integer
+    min: 1
+  - _id: HSi5AeK2LzD29Sfz4
+    name: stageDuration
+    description: Specifies how many seconds for each decision stage
+    required: false
+    type: Integer
+    min: 0
+    max: 1000
+  - _id: sSPSjDpYfDu2Dtv4n
+    name: nRounds
+    description: >-
+      number of times the participants repeat the experiment. In this case, it's
+      number of stories
+    required: false
+    type: Integer
+    min: 1
+    max: 100
+  - _id: BWfna89zCHZWjQANR
+    name: hasPrompt
+    description: >-
+      boolean value to decide whether we should give prompts to the
+      participants.
+    required: false
+    type: Boolean
+factors:
+  - _id: xjQjs6fzfpYDTGfwo
+    name: solo
+    value: 1
+    factorTypeId: f32f7HPGCuhjfXMMY
+  - _id: ejhZfJ8E4k6iAGmcR
+    name: pair
+    value: 2
+    factorTypeId: f32f7HPGCuhjfXMMY
+  - _id: wKE2gimdSTxfryFrX
+    name: short
+    value: 300
+    factorTypeId: HSi5AeK2LzD29Sfz4
+  - _id: vFoWs24JoC9TetLdm
+    name: single
+    value: 1
+    factorTypeId: sSPSjDpYfDu2Dtv4n
+  - _id: XrEEtF2oHLEAARtch
+    name: multi
+    value: 3
+    factorTypeId: sSPSjDpYfDu2Dtv4n
+  - _id: 3aNnE7LLy33YXQgwQ
+    name: debugMode
+    value: 1000
+    factorTypeId: HSi5AeK2LzD29Sfz4
+  - _id: 4QqXEjtqvLt8SMRP9
+    name: 'true'
+    value: true
+    factorTypeId: BWfna89zCHZWjQANR
+  - _id: gAeLyEQ7mxooswLfo
+    name: 'false'
+    value: false
+    factorTypeId: BWfna89zCHZWjQANR
+lobbyConfigs:
+  - name: default
+    timeoutType: lobby
+    timeoutInSeconds: 300
+    timeoutStrategy: fail
+    gameLobbyIds: []

@@ -8,3 +8,7 @@ development.json
 dev.json
 local.json
 settings.json
+.DS_Store
+./idea
+./meteor
+

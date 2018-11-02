@@ -5,7 +5,7 @@ import Empirica from "meteor/empirica:core";
 
 import "./callbacks.js";
 import "./bots.js";
-import { SceneSettings } from "./constants";
+import { SceneSettings, rdmPrompt } from "./constants";
 import React from "react";
 
 // gameInit is where the structure of a game is defined.
@@ -24,23 +24,35 @@ Empirica.gameInit((game, treatment, players) => {
     _.pluck(players, "id")
   );
 
-    // Dan : leave it for now and maybe change it to the character's name.
-
+  // Dan : UI related initiation better happens here
     let charNames = [];
     let charPrompts = {};
-    //console.log(SceneSettings);
     // Dan : fix the scenario for now. May change it later
     SceneSettings[0].characters.forEach((character) => {
         charNames.push(character.name);
-        charPrompts[character.name] = character.prompt;
+        // Dan : use random prompt for now
+        charPrompts[character.name] = _.shuffle(rdmPrompt); character.prompt;
     });
 
+    // Dan : init player
+    // Dan : add avatar
+    // to do more go to https://jdenticon.com/#icon-D3
+    const avatarNames = ["Colton", "Aaron"];
+    // similar to the color of the avatar
+    const nameColor = ["#3D50B7", "#70A945"];
 
-  //play the sound on the UI when the game starts
-    // Dan : need to restart server to add new var
+    players.forEach((player, i) => {
+        player.set("name", charNames[i]);
+        player.set("avatar", `/avatars/jdenticon/${avatarNames[i]}`);
+        player.set("nameColor", nameColor[i]);
+        player.set("score", 0);
+        player.set("satisfied", false);
+    });
+
+    // Dan : play the sound on the UI when the game starts to remind the user
+    // Dan : note - need to restart the batch to add new var in server
     game.set("justStarted", true);
     game.set("scenario", SceneSettings[0].sceneDesc);
-    // Dan : maybe init the player's name here ~ decide who play whom
 
     // Dan : we'll have 1 round, each task is 3 stage
     const round = game.addRound();
@@ -52,32 +64,33 @@ Empirica.gameInit((game, treatment, players) => {
         numRounds = game.treatment.nRounds;
     }
 
-    // Dan : loDash ?
+    // Dan :
     _.times(numRounds, i => {
         const stage = round.addStage({
             name: "writing-" + i.toString(),
             displayName: "Story " + (i+1).toString(),
             durationInSeconds: game.treatment.stageDuration
         });
-        // Dan : add the value of IV for each trail
-        // Dan : fix them for now
-        let tempSceneSettings = {};
+        // Dan : add the value of prompts for each stage
+        let tempPrompts = {};
         // Dan : no prompt for the first rounds.
 
         if (i > 0)
             // first rounds is empty
             {
                 charNames.forEach((name) => {
-                    tempSceneSettings[name] =
+                    tempPrompts[name] =
                         charPrompts[name][i]});
 
             }
         else {
                 charNames.forEach((name) => {
-                    tempSceneSettings[name] =
+                    tempPrompts[name] =
                         "";
             });
         }
-        stage.set("task", tempSceneSettings);
+        stage.set("task", tempPrompts);
+        // Dan : use this to control the turn taking. By default, Anne starts first
+        stage.set("whosTurn", players[0]._id);
     });
 });

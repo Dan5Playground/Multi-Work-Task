@@ -49,7 +49,8 @@ export default class Overview extends React.Component {
                 </li>
                 <li>Use <strong>a simple sentence</strong> describing one character
                     taking one action, e.g. : <em> Anne introduced herself.</em></li>
-
+                <li>The character you play <strong>may be different</strong> at each stage,
+                    please read the instruction carefully.</li>
                 <li>Try to use the <strong>past tense </strong> of all the verbs.</li>
                 <li>
                     <strong>
