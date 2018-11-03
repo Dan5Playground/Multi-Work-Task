@@ -82,12 +82,12 @@ export default class ExitSurvey extends React.Component {
                 any information you feel uncomfortable with.
             </p>
             <form onSubmit={this.handleSubmit}>
-                {game.treatment.playerCount > 1?
+                {game.treatment.playerCount > 1 && game.players.length > 1?
                 <div className="form-line">
                     <RadioGroup
                         inline={true}
                         name="agreement"
-                        label="Have you reach your goal?"
+                        label="Have your character reached his/her goal?"
                         onChange={this.handleChange}
                         selectedValue={agreement}
                     >
@@ -166,7 +166,7 @@ export default class ExitSurvey extends React.Component {
                         </FormGroup>
                     </div>
                 </div>
-                {game.treatment.playerCount > 1?
+                {game.treatment.playerCount > 1 && game.players.length > 1?
                     <div className="form-line">
                         <div className="form-line thirds">
                             <FormGroup

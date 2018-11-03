@@ -1,6 +1,7 @@
 import React from "react";
 
 import {Centered} from "meteor/empirica:core";
+import {FormGroup, Intent, TextArea} from "@blueprintjs/core";
 
 export default class Sorry extends React.Component {
   static stepName = "Sorry";
@@ -46,8 +47,7 @@ export default class Sorry extends React.Component {
           {player.exitStatus === "gameLobbyTimedOut" ? (
             <p>
               Please submit <em>{player._id}</em> as the survey code in order to
-              receive the $1 base payment for your time today. We will also add
-              $0.1 showing-up bonus with the approval of this HIT.
+              receive the $0.5 base payment for your time today.
             </p>
           ) : null}
 
@@ -58,21 +58,28 @@ export default class Sorry extends React.Component {
             </p>
           ) : null}
 
-          {/*) : (*/}
-          {/*<p>*/}
-          {/*Please click on: <strong>Reset current session</strong> from the*/}
-          {/*top right side of the page (if it appears for you) to see if there*/}
-          {/*are other games that you could join now. Note you will need to go*/}
-          {/*over the instructions and quiz again (they might be different for*/}
-          {/*different games). Otherwise, Please return the HIT now so our*/}
-          {/*platform does not register your MTurk ID as someone who already*/}
-          {/*participated.*/}
-          {/*</p>*/}
-
           <p>
             <strong>Please come back for the next scheduled game.</strong>{" "}
             {/*We will send an email notification once the next  HIT is scheduled.*/}
           </p>
+
+            <FormGroup
+                className={"form-group"}
+                inline={false}
+                label={"Feedback, including problems you encountered."}
+                labelFor={"fair"}
+                //className={"form-group"}
+            >
+              <TextArea
+                  id="feedback"
+                  name="feedback"
+                  large={true}
+                  intent={Intent.PRIMARY}
+                  onChange={this.handleChange}
+                  value={feedback}
+                  fill={true}
+              />
+            </FormGroup>
 
           {/*This is not really needed .. all of these people failed to start the game .. if we allow them to submit, then their data will be deleted, we don't want that*/}
           <p>

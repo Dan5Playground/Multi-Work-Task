@@ -49,14 +49,18 @@ export default class Task extends React.Component {
 
 
         <div className="board">
+            {game.players.length === 1?
+            <h4 style={{color:"#FF0000"}}> There are no other players at the moment.
+                You can write the story by yourself  </h4>
+            :null}
             <h3>Scenario</h3>
             <p>
                 {scenario}
             </p>
-            {game.treatment.playerCount > 1?
+            {game.treatment.playerCount > 1 && game.players.length > 1?
                 <p> You will play the role of <strong>{playerName}</strong>.</p>:null
-
             }
+
             {/*check for condition 1*/}
             {game.treatment.hasPrompt && prompt[playerName] !== undefined ?
                 <p><strong>Now Imagine : </strong> <em style={{color:"#FF0000"}}>
@@ -75,7 +79,7 @@ export default class Task extends React.Component {
                     messages={messages}
                     stage={stage}
                     player={player}
-                    social = {game.treatment.playerCount > 1}
+                    social = {game.treatment.playerCount > 1 && game.players.length > 1}
                     game = {game}
                 />
                 {/*Only avaliable whne the length is longer than 6*/}
