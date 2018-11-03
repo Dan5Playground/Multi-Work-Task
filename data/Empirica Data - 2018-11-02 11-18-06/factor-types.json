@@ -1,0 +1,4 @@
+{"_id":"f32f7HPGCuhjfXMMY","name":"playerCount","required":true,"description":"The Number of players participating in the given game.","type":"Integer","min":1,"createdAt":"2018-10-29T15:45:09.882Z"}
+{"_id":"HSi5AeK2LzD29Sfz4","name":"stageDuration","required":false,"description":"Specifies how many seconds for each decision stage","type":"Integer","min":0,"max":1000,"createdAt":"2018-10-29T15:46:45.839Z"}
+{"_id":"sSPSjDpYfDu2Dtv4n","name":"nRounds","required":false,"description":"number of times the participants repeat the experiment. In this case, it's number of stories","type":"Integer","min":1,"max":100,"createdAt":"2018-10-29T15:48:19.223Z"}
+{"_id":"BWfna89zCHZWjQANR","name":"hasPrompt","required":false,"description":"boolean value to decide whether we should give prompts to the participants.","type":"Boolean","createdAt":"2018-10-29T16:30:58.356Z"}

@@ -41,6 +41,23 @@ export const SceneSettings = [
                     " or a person",
                     "an ethical and creative person",
                     "Charlie's ex-girlfriend"]}]
+    },
+    {// Scene 3: debug
+        sceneDesc : "Charlie wants to invite his new colleague Anne for dinner. ",
+        characters : [
+            {name : "Anne",
+                // format for prompts :  Char is PROMPT
+                prompt : [
+                    "a manipulative person who always attempts to control a situation" +
+                    " or a person",
+                    "an ethical and creative person",
+                    "Charlie's ex-girlfriend"]},
+            {name : "Charlie",
+                prompt : [
+                    "a manipulative person who always attempts to control a situation" +
+                    " or a person",
+                    "an ethical and creative person",
+                    "Charlie's ex-girlfriend"]}]
     }
 
 ];

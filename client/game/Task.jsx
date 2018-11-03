@@ -10,7 +10,7 @@ export default class Task extends React.Component {
   componentDidMount() {
     const { player } = this.props;
     // the player could only go to the next step after 1 min
-    setTimeout(() => this.setState({ activeButton: true }), 1*60*1000);
+    // setTimeout(() => this.setState({ activeButton: true }), 1*60*1000);
 
   }
   handleSubmit = event => {
@@ -49,9 +49,9 @@ export default class Task extends React.Component {
 
 
         <div className="board">
-            {game.players.length === 1?
+            {game.treatment.playerCount > 1 && game.players.length === 1?
             <h4 style={{color:"#FF0000"}}> There are no other players at the moment.
-                You can write the story by yourself  </h4>
+                You can write the story by yourself.  </h4>
             :null}
             <h3>Scenario</h3>
             <p>

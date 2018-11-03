@@ -31,9 +31,10 @@ Empirica.gameInit((game, treatment, players) => {
     SceneSettings[0].characters.forEach((character) => {
         charNames.push(character.name);
         // Dan : use random prompt for now
-        charPrompts[character.name] = _.shuffle(rdmPrompt); character.prompt;
+        charPrompts[character.name] = _.shuffle(rdmPrompt); //character.prompt;
     });
-
+    // shuffle the name of all the characters.
+    _.shuffle(charNames);
     // Dan : init player
     // Dan : add avatar
     // to do more go to https://jdenticon.com/#icon-D3
@@ -46,7 +47,7 @@ Empirica.gameInit((game, treatment, players) => {
         player.set("avatar", `/avatars/jdenticon/${avatarNames[i]}`);
         player.set("nameColor", nameColor[i]);
         player.set("score", 0);
-        player.set("satisfied", false);
+        player.set("satisfied", false)
     });
 
     // Dan : play the sound on the UI when the game starts to remind the user

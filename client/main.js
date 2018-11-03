@@ -8,6 +8,7 @@ import Empirica from "meteor/empirica:core";
 import Consent from "./intro/Consent.jsx";
 import ExitSurvey from "./exit/ExitSurvey.jsx";
 import Overview from "./intro/Overview.jsx"
+import UIOverview from "./intro/UIOverview.jsx";
 import SimpleQuiz from "./intro/SimpleQuiz.jsx";
 
 import Round from "./game/Round.jsx";
@@ -21,7 +22,7 @@ Empirica.consent(Consent);
 // At this point they have been assigned a treatment. You can return
 // different instruction steps depending on the assigned treatment.
 Empirica.introSteps((game, treatment) => {
-  const steps = [Overview]
+  const steps = [Overview, UIOverview]
     steps.push(SimpleQuiz);
   return steps;
 });

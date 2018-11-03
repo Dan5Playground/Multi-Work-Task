@@ -1,0 +1,6 @@
+{"_id":"pLe3ZPgmbX2kz9xGp","name":"solo_single_debug","factorIds":["xjQjs6fzfpYDTGfwo","3aNnE7LLy33YXQgwQ","vFoWs24JoC9TetLdm"],"createdAt":"2018-10-29T15:50:27.712Z"}
+{"_id":"WtK8o3HeWPjJcG436","name":"solo_multi_debug","factorIds":["xjQjs6fzfpYDTGfwo","3aNnE7LLy33YXQgwQ","XrEEtF2oHLEAARtch"],"createdAt":"2018-10-29T15:50:41.529Z"}
+{"_id":"JJ8CPwuJgKDZj5NJC","name":"pair","factorIds":["ejhZfJ8E4k6iAGmcR"],"createdAt":"2018-10-29T15:51:34.283Z"}
+{"_id":"EoP7sFZMdciTX922z","name":"pair_multi_debug","factorIds":["ejhZfJ8E4k6iAGmcR","3aNnE7LLy33YXQgwQ","XrEEtF2oHLEAARtch"],"createdAt":"2018-10-29T15:51:56.215Z"}
+{"_id":"qfaQXdo7bbxN4mZkF","name":"solo_multi_prompt_debug","factorIds":["xjQjs6fzfpYDTGfwo","3aNnE7LLy33YXQgwQ","XrEEtF2oHLEAARtch","4QqXEjtqvLt8SMRP9"],"createdAt":"2018-10-29T16:32:06.276Z"}
+{"_id":"ZGjaF65LxShzFLASS","name":"pair_multi_prompt_debug","factorIds":["ejhZfJ8E4k6iAGmcR","3aNnE7LLy33YXQgwQ","XrEEtF2oHLEAARtch","4QqXEjtqvLt8SMRP9"],"createdAt":"2018-10-29T22:15:38.117Z"}

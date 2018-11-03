@@ -6,23 +6,7 @@ export default class Overview extends React.Component {
   render() {
     const { hasPrev, hasNext, onNext, onPrev, treatment } = this.props;
     const social = treatment.playerCount > 1;
-    let imgUrl = "";
-    if (social)
-    {
-        if ( treatment.hasPrompt) {
-            imgUrl = "./resources/UI/pair_wi_prompt.png";
-        }
-        else{
-            imgUrl = "./resources/UI/pair.png";
-        }
-    }else{
-        if ( treatment.hasPrompt) {
-            imgUrl = "./resources/UI/single_wi_prompt.png";
-        }
-        else{
-            imgUrl = "./resources/UI/single.png";
-        }
-    }
+
 
     return (
       <Centered>
@@ -38,14 +22,26 @@ export default class Overview extends React.Component {
                     <li><strong>
                         You will play this game simultaneously with{" "}
                         <span style={{color:"#FF0000"}}>{treatment.playerCount - 1} </span>
-                        other participant(s) in real-time
+                        other participant(s) in real-time.
+                    </strong><em>  </em> </li>
+                    : null}
+                {social?
+                    <li>
+                        If the other player drop off in the middle of the task,
+                        <strong> please contact us to get the reward code.
                     </strong></li>
+                    : null}
+                {social?
+                    <li>
+                        You may need to wait up to <strong>15 minutes</strong> for the
+                        other player to show up.
+                    </li>
                     : null}
                 <li>This task contains<strong> 3 </strong>stages.
                     For each stage,
                     {treatment.hasPrompt? " you will be given a new prompt and " : "" }
 
-                    please write at least <strong>6 actions</strong> for each story.
+                    please write at least <strong> 6 actions</strong> for each story.
                 </li>
                 <li>Use <strong>a simple sentence</strong> describing one character
                     taking one action, e.g. : <em> Anne introduced herself.</em></li>
@@ -65,16 +61,6 @@ export default class Overview extends React.Component {
                     There is NO mobile support.
                 </li>
             </ul>
-            <p>Here is an example of what the interface looks like. </p>
-            <p>Use the <strong>green</strong> button to add new actions
-                and the <strong>blue button</strong> to submit the story
-                when you finished. {social? " The next stage will start after all of you " +
-                    "submit.":null}</p>
-            <div className="all-rooms bp3-card">
-
-                <img src = {imgUrl} width="100%" />
-
-            </div>
 
 
 

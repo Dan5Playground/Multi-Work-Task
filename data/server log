@@ -1,0 +1,435 @@
+2018-11-02 14:53:18+00:00Game with a treatment: { stageDuration: 1000,
+g7kvc
+2018-11-02 14:53:18+00:00 playerCount: 2,
+g7kvc
+2018-11-02 14:53:18+00:00 nRounds: 3,
+g7kvc
+2018-11-02 14:53:18+00:00 hasPrompt: true } will start, with workers [ 'AY4EQTZ5Y77TT', 'A1OBB3PWYWK9KK' ]
+g7kvc
+2018-11-02 14:53:19+00:00game Xb2WYxtKCcwK4C44b started
+g7kvc
+2018-11-02 14:53:19+00:00round [object Object]starts
+g7kvc
+2018-11-02 14:53:19+00:00stage writing-0 of game Xb2WYxtKCcwK4C44b started
+g7kvc
+2018-11-02 14:58:21+00:00Stage writing-0 game Xb2WYxtKCcwK4C44b ended
+g7kvc
+2018-11-02 14:58:21+00:00stage writing-1 of game Xb2WYxtKCcwK4C44b started
+g7kvc
+2018-11-02 15:05:53+00:00Stage writing-1 game Xb2WYxtKCcwK4C44b ended
+g7kvc
+2018-11-02 15:05:53+00:00stage writing-2 of game Xb2WYxtKCcwK4C44b started
+g7kvc
+2018-11-02 15:15:17+00:00Stage writing-2 game Xb2WYxtKCcwK4C44b ended
+g7kvc
+2018-11-02 15:15:17+00:00round [object Object]starts
+g7kvc
+2018-11-02 15:15:17+00:00The game Xb2WYxtKCcwK4C44b has ended
+g7kvc
+2018-11-02 16:07:50+00:00Game with a treatment: { stageDuration: 1000,
+g7kvc
+2018-11-02 16:07:50+00:00 playerCount: 2,
+g7kvc
+2018-11-02 16:07:50+00:00 nRounds: 3,
+g7kvc
+2018-11-02 16:07:50+00:00 hasPrompt: true } will start, with workers [ 'A240OTT1T85UGT' ]
+g7kvc
+2018-11-02 16:07:52+00:00game 6rPgxcnyQyd5gmuST started
+g7kvc
+2018-11-02 16:07:52+00:00round [object Object]starts
+g7kvc
+2018-11-02 16:07:52+00:00stage writing-0 of game 6rPgxcnyQyd5gmuST started
+g7kvc
+2018-11-02 16:24:33+00:00Stage writing-0 game 6rPgxcnyQyd5gmuST ended
+g7kvc
+2018-11-02 16:24:33+00:00stage writing-1 of game 6rPgxcnyQyd5gmuST started
+g7kvc
+2018-11-02 16:41:14+00:00Stage writing-1 game 6rPgxcnyQyd5gmuST ended
+g7kvc
+2018-11-02 16:41:14+00:00stage writing-2 of game 6rPgxcnyQyd5gmuST started
+g7kvc
+2018-11-02 16:57:55+00:00Stage writing-2 game 6rPgxcnyQyd5gmuST ended
+g7kvc
+2018-11-02 16:57:55+00:00round [object Object]starts
+g7kvc
+2018-11-02 16:57:55+00:00The game 6rPgxcnyQyd5gmuST has ended
+g7kvc
+2018-11-02 18:25:01+00:00(node:6) UnhandledPromiseRejectionWarning: MongoError: not authorized on compose to execute command { drop: "system.indexes" }
+g7kvc
+2018-11-02 18:25:01+00:00 at /app/bundle/programs/server/npm/node_modules/meteor/npm-mongo/node_modules/mongodb-core/lib/connection/pool.js:593:63
+g7kvc
+2018-11-02 18:25:01+00:00 at authenticateStragglers (/app/bundle/programs/server/npm/node_modules/meteor/npm-mongo/node_modules/mongodb-core/lib/connection/pool.js:516:16)
+g7kvc
+2018-11-02 18:25:01+00:00 at Connection.messageHandler (/app/bundle/programs/server/npm/node_modules/meteor/npm-mongo/node_modules/mongodb-core/lib/connection/pool.js:552:5)
+g7kvc
+2018-11-02 18:25:01+00:00 at emitMessageHandler (/app/bundle/programs/server/npm/node_modules/meteor/npm-mongo/node_modules/mongodb-core/lib/connection/connection.js:309:10)
+g7kvc
+2018-11-02 18:25:01+00:00 at TLSSocket.<anonymous> (/app/bundle/programs/server/npm/node_modules/meteor/npm-mongo/node_modules/mongodb-core/lib/connection/connection.js:452:17)
+g7kvc
+2018-11-02 18:25:01+00:00 at emitOne (events.js:116:13)
+g7kvc
+2018-11-02 18:25:01+00:00 at TLSSocket.emit (events.js:211:7)
+g7kvc
+2018-11-02 18:25:01+00:00 at addChunk (_stream_readable.js:263:12)
+g7kvc
+2018-11-02 18:25:01+00:00 at readableAddChunk (_stream_readable.js:250:11)
+g7kvc
+2018-11-02 18:25:01+00:00 at TLSSocket.Readable.push (_stream_readable.js:208:10)
+g7kvc
+2018-11-02 18:25:01+00:00 at TLSWrap.onread (net.js:597:20)
+g7kvc
+2018-11-02 18:25:01+00:00(node:6) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 438)
+g7kvc
+2018-11-02 18:25:01+00:00(node:6) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+g7kvc
+2018-11-02 18:25:39+00:00(node:6) UnhandledPromiseRejectionWarning: MongoError: not authorized on compose to execute command { drop: "system.indexes" }
+g7kvc
+2018-11-02 18:25:39+00:00 at /app/bundle/programs/server/npm/node_modules/meteor/npm-mongo/node_modules/mongodb-core/lib/connection/pool.js:593:63
+g7kvc
+2018-11-02 18:25:39+00:00 at authenticateStragglers (/app/bundle/programs/server/npm/node_modules/meteor/npm-mongo/node_modules/mongodb-core/lib/connection/pool.js:516:16)
+g7kvc
+2018-11-02 18:25:39+00:00 at Connection.messageHandler (/app/bundle/programs/server/npm/node_modules/meteor/npm-mongo/node_modules/mongodb-core/lib/connection/pool.js:552:5)
+g7kvc
+2018-11-02 18:25:39+00:00 at emitMessageHandler (/app/bundle/programs/server/npm/node_modules/meteor/npm-mongo/node_modules/mongodb-core/lib/connection/connection.js:309:10)
+g7kvc
+2018-11-02 18:25:39+00:00 at TLSSocket.<anonymous> (/app/bundle/programs/server/npm/node_modules/meteor/npm-mongo/node_modules/mongodb-core/lib/connection/connection.js:452:17)
+g7kvc
+2018-11-02 18:25:39+00:00 at emitOne (events.js:116:13)
+g7kvc
+2018-11-02 18:25:39+00:00 at TLSSocket.emit (events.js:211:7)
+g7kvc
+2018-11-02 18:25:39+00:00 at addChunk (_stream_readable.js:263:12)
+g7kvc
+2018-11-02 18:25:39+00:00 at readableAddChunk (_stream_readable.js:250:11)
+g7kvc
+2018-11-02 18:25:39+00:00 at TLSSocket.Readable.push (_stream_readable.js:208:10)
+g7kvc
+2018-11-02 18:25:39+00:00 at TLSWrap.onread (net.js:597:20)
+g7kvc
+2018-11-02 18:25:39+00:00(node:6) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 439)
+g7kvc
+2018-11-02 18:31:53+00:00Game with a treatment: { stageDuration: 1000,
+g7kvc
+2018-11-02 18:31:53+00:00 playerCount: 2,
+g7kvc
+2018-11-02 18:31:53+00:00 nRounds: 3,
+g7kvc
+2018-11-02 18:31:53+00:00 hasPrompt: true } will start, with workers [ 'A1Z5GJ9ZT65RNE', 'A3SCPCR9V1IODH' ]
+g7kvc
+2018-11-02 18:31:55+00:00game faDMJ9p4gHsoArrih started
+g7kvc
+2018-11-02 18:31:55+00:00round [object Object]starts
+g7kvc
+2018-11-02 18:31:55+00:00stage writing-0 of game faDMJ9p4gHsoArrih started
+g7kvc
+2018-11-02 18:36:38+00:00Game with a treatment: { stageDuration: 1000,
+g7kvc
+2018-11-02 18:36:38+00:00 playerCount: 2,
+g7kvc
+2018-11-02 18:36:38+00:00 nRounds: 3,
+g7kvc
+2018-11-02 18:36:38+00:00 hasPrompt: true } will start, with workers [ 'A1FHOY12VSXUMK', 'A2WDF40FA670T9' ]
+g7kvc
+2018-11-02 18:36:40+00:00game ys46NdpYXkT3iDsbm started
+g7kvc
+2018-11-02 18:36:40+00:00round [object Object]starts
+g7kvc
+2018-11-02 18:36:40+00:00stage writing-0 of game ys46NdpYXkT3iDsbm started
+g7kvc
+2018-11-02 18:36:44+00:00Game with a treatment: { stageDuration: 1000,
+g7kvc
+2018-11-02 18:36:44+00:00 playerCount: 2,
+g7kvc
+2018-11-02 18:36:44+00:00 nRounds: 3,
+g7kvc
+2018-11-02 18:36:44+00:00 hasPrompt: true } will start, with workers [ 'A2F0A4FIVT9M3O', 'A232KB6BKXTLR' ]
+g7kvc
+2018-11-02 18:36:45+00:00game ucKZyuEzmBytdfKL8 started
+g7kvc
+2018-11-02 18:36:45+00:00round [object Object]starts
+g7kvc
+2018-11-02 18:36:45+00:00stage writing-0 of game ucKZyuEzmBytdfKL8 started
+g7kvc
+2018-11-02 18:44:50+00:00Exception while invoking method 'Players.methods.updateData' Error: not permitted
+g7kvc
+2018-11-02 18:44:50+00:00 at MethodInvocation.run (packages/empirica:core/api/player-stages/methods.js:84:13)
+g7kvc
+2018-11-02 18:44:50+00:00 at ValidatedMethod._execute (packages/mdg:validated-method/validated-method.js:93:12)
+g7kvc
+2018-11-02 18:44:50+00:00 at MethodInvocation.PlayerStages.methods.submit (packages/mdg:validated-method/validated-method.js:54:23)
+g7kvc
+2018-11-02 18:44:50+00:00 at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1767:12)
+g7kvc
+2018-11-02 18:44:50+00:00 at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:1685:15)
+g7kvc
+2018-11-02 18:44:50+00:00 at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1304:12)
+g7kvc
+2018-11-02 18:44:50+00:00 at resolve (packages/ddp-server/livedata_server.js:1683:36)
+g7kvc
+2018-11-02 18:44:50+00:00 at new Promise (<anonymous>)
+g7kvc
+2018-11-02 18:44:50+00:00 at Server.applyAsync (packages/ddp-server/livedata_server.js:1682:12)
+g7kvc
+2018-11-02 18:44:50+00:00 at Server.apply (packages/ddp-server/livedata_server.js:1621:26)
+g7kvc
+2018-11-02 18:44:50+00:00 at ValidatedMethod.call (packages/mdg:validated-method/validated-method.js:67:30)
+g7kvc
+2018-11-02 18:44:50+00:00 at Object.cb [as submit] (packages/empirica:core/api/player-stages/augment.js:38:21)
+g7kvc
+2018-11-02 18:44:50+00:00 at players.forEach.player (server/callbacks.js:98:22)
+g7kvc
+2018-11-02 18:44:50+00:00 at Array.forEach (<anonymous>)
+g7kvc
+2018-11-02 18:44:50+00:00 at Empirica.onSet (server/callbacks.js:97:15)
+g7kvc
+2018-11-02 18:44:50+00:00 at callbacks.forEach.callback (packages/empirica:core/api/server/onchange.js:100:5)
+g7kvc
+2018-11-02 18:44:50+00:00 => awaited here:
+g7kvc
+2018-11-02 18:44:50+00:00 at Promise.await (/app/bundle/programs/server/npm/node_modules/meteor/promise/node_modules/meteor-promise/promise_server.js:60:12)
+g7kvc
+2018-11-02 18:44:50+00:00 at Server.apply (packages/ddp-server/livedata_server.js:1634:14)
+g7kvc
+2018-11-02 18:44:50+00:00 at ValidatedMethod.call (packages/mdg:validated-method/validated-method.js:67:30)
+g7kvc
+2018-11-02 18:44:50+00:00 at Object.cb [as submit] (packages/empirica:core/api/player-stages/augment.js:38:21)
+g7kvc
+2018-11-02 18:44:50+00:00 at players.forEach.player (server/callbacks.js:98:22)
+g7kvc
+2018-11-02 18:44:50+00:00 at Array.forEach (<anonymous>)
+g7kvc
+2018-11-02 18:44:50+00:00 at Empirica.onSet (server/callbacks.js:97:15)
+g7kvc
+2018-11-02 18:44:50+00:00 at callbacks.forEach.callback (packages/empirica:core/api/server/onchange.js:100:5)
+g7kvc
+2018-11-02 18:44:50+00:00 at Array.forEach (<anonymous>)
+g7kvc
+2018-11-02 18:44:50+00:00 at Object.callOnChange (packages/empirica:core/api/server/onchange.js:99:13)
+g7kvc
+2018-11-02 18:44:50+00:00 at MethodInvocation.run (packages/empirica:core/api/players/methods.js:273:14)
+g7kvc
+2018-11-02 18:44:50+00:00 at ValidatedMethod._execute (packages/mdg:validated-method/validated-method.js:93:12)
+g7kvc
+2018-11-02 18:44:50+00:00 at MethodInvocation.Players.methods.updateData (packages/mdg:validated-method/validated-method.js:54:23)
+g7kvc
+2018-11-02 18:44:50+00:00 at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1767:12)
+g7kvc
+2018-11-02 18:44:50+00:00 at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
+g7kvc
+2018-11-02 18:44:50+00:00 at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1304:12)
+g7kvc
+2018-11-02 18:44:51+00:00Stage writing-0 game ys46NdpYXkT3iDsbm ended
+g7kvc
+2018-11-02 18:44:52+00:00stage writing-1 of game ys46NdpYXkT3iDsbm started
+g7kvc
+2018-11-02 18:46:10+00:00Stage writing-0 game faDMJ9p4gHsoArrih ended
+g7kvc
+2018-11-02 18:46:10+00:00stage writing-1 of game faDMJ9p4gHsoArrih started
+g7kvc
+2018-11-02 18:53:26+00:00Stage writing-0 game ucKZyuEzmBytdfKL8 ended
+g7kvc
+2018-11-02 18:53:26+00:00stage writing-1 of game ucKZyuEzmBytdfKL8 started
+g7kvc
+2018-11-02 19:01:33+00:00Stage writing-1 game ys46NdpYXkT3iDsbm ended
+g7kvc
+2018-11-02 19:01:33+00:00stage writing-2 of game ys46NdpYXkT3iDsbm started
+g7kvc
+2018-11-02 19:02:51+00:00Stage writing-1 game faDMJ9p4gHsoArrih ended
+g7kvc
+2018-11-02 19:02:51+00:00stage writing-2 of game faDMJ9p4gHsoArrih started
+g7kvc
+2018-11-02 19:10:07+00:00Stage writing-1 game ucKZyuEzmBytdfKL8 ended
+g7kvc
+2018-11-02 19:10:07+00:00stage writing-2 of game ucKZyuEzmBytdfKL8 started
+g7kvc
+2018-11-02 19:18:14+00:00Stage writing-2 game ys46NdpYXkT3iDsbm ended
+g7kvc
+2018-11-02 19:18:14+00:00round [object Object]starts
+g7kvc
+2018-11-02 19:18:14+00:00The game ys46NdpYXkT3iDsbm has ended
+g7kvc
+2018-11-02 19:19:33+00:00Stage writing-2 game faDMJ9p4gHsoArrih ended
+g7kvc
+2018-11-02 19:19:33+00:00round [object Object]starts
+g7kvc
+2018-11-02 19:19:33+00:00The game faDMJ9p4gHsoArrih has ended
+g7kvc
+2018-11-02 19:26:48+00:00Stage writing-2 game ucKZyuEzmBytdfKL8 ended
+g7kvc
+2018-11-02 19:26:48+00:00round [object Object]starts
+g7kvc
+2018-11-02 19:26:48+00:00The game ucKZyuEzmBytdfKL8 has ended
+g7kvc
+2018-11-02 20:52:28+00:00Game with a treatment: { stageDuration: 1000,
+g7kvc
+2018-11-02 20:52:28+00:00 playerCount: 2,
+g7kvc
+2018-11-02 20:52:28+00:00 nRounds: 3,
+g7kvc
+2018-11-02 20:52:28+00:00 hasPrompt: true } will start, with workers [ 'A7SXWHGK8B40R', 'a2znhvde31peo7' ]
+g7kvc
+2018-11-02 20:52:29+00:00game m2x3HHoJbwdHSXXCM started
+g7kvc
+2018-11-02 20:52:29+00:00round [object Object]starts
+g7kvc
+2018-11-02 20:52:29+00:00stage writing-0 of game m2x3HHoJbwdHSXXCM started
+g7kvc
+2018-11-02 21:09:10+00:00Stage writing-0 game m2x3HHoJbwdHSXXCM ended
+g7kvc
+2018-11-02 21:09:10+00:00stage writing-1 of game m2x3HHoJbwdHSXXCM started
+g7kvc
+2018-11-02 21:25:51+00:00Stage writing-1 game m2x3HHoJbwdHSXXCM ended
+g7kvc
+2018-11-02 21:25:51+00:00stage writing-2 of game m2x3HHoJbwdHSXXCM started
+g7kvc
+2018-11-02 21:42:33+00:00Stage writing-2 game m2x3HHoJbwdHSXXCM ended
+g7kvc
+2018-11-02 21:42:33+00:00round [object Object]starts
+g7kvc
+2018-11-02 21:42:33+00:00The game m2x3HHoJbwdHSXXCM has ended
+g7kvc
+2018-11-02 22:38:58+00:00Game with a treatment: { stageDuration: 1000,
+g7kvc
+2018-11-02 22:38:58+00:00 playerCount: 2,
+g7kvc
+2018-11-02 22:38:58+00:00 nRounds: 3,
+g7kvc
+2018-11-02 22:38:58+00:00 hasPrompt: true } will start, with workers [ 'A1QDQU3TJHQYAU', 'A13CN7SR7YK1F3' ]
+g7kvc
+2018-11-02 22:38:58+00:00game 2MXHsXo7TGGhgfhAh started
+g7kvc
+2018-11-02 22:38:58+00:00round [object Object]starts
+g7kvc
+2018-11-02 22:38:58+00:00stage writing-0 of game 2MXHsXo7TGGhgfhAh started
+g7kvc
+2018-11-02 22:49:40+00:00Stage writing-0 game 2MXHsXo7TGGhgfhAh ended
+g7kvc
+2018-11-02 22:49:40+00:00stage writing-1 of game 2MXHsXo7TGGhgfhAh started
+g7kvc
+2018-11-02 22:56:23+00:00Stage writing-1 game 2MXHsXo7TGGhgfhAh ended
+g7kvc
+2018-11-02 22:56:23+00:00stage writing-2 of game 2MXHsXo7TGGhgfhAh started
+g7kvc
+2018-11-02 23:01:53+00:00Stage writing-2 game 2MXHsXo7TGGhgfhAh ended
+g7kvc
+2018-11-02 23:01:53+00:00round [object Object]starts
+g7kvc
+2018-11-02 23:01:53+00:00The game 2MXHsXo7TGGhgfhAh has ended
+g7kvc
+2018-11-02 23:21:06+00:00Game with a treatment: { stageDuration: 1000,
+g7kvc
+2018-11-02 23:21:06+00:00 playerCount: 2,
+g7kvc
+2018-11-02 23:21:06+00:00 nRounds: 3,
+g7kvc
+2018-11-02 23:21:06+00:00 hasPrompt: true } will start, with workers [ 'A2Y7W27383P5CB', 'A3K4IXC8ZSRV8H' ]
+g7kvc
+2018-11-02 23:21:07+00:00game iRsRatFu2GNMjYS34 started
+g7kvc
+2018-11-02 23:21:07+00:00round [object Object]starts
+g7kvc
+2018-11-02 23:21:07+00:00stage writing-0 of game iRsRatFu2GNMjYS34 started
+g7kvc
+2018-11-02 23:37:48+00:00Stage writing-0 game iRsRatFu2GNMjYS34 ended
+g7kvc
+2018-11-02 23:37:48+00:00stage writing-1 of game iRsRatFu2GNMjYS34 started
+g7kvc
+2018-11-02 23:54:30+00:00Stage writing-1 game iRsRatFu2GNMjYS34 ended
+g7kvc
+2018-11-02 23:54:30+00:00stage writing-2 of game iRsRatFu2GNMjYS34 started
+we40c
+2018-11-03 00:00:36+00:00Application process starting, version 9
+g7kvc
+2018-11-03 00:01:10+00:00The container is being stopped because Galaxy is replacing the machine it's running on.
+g7kvc
+2018-11-03 00:01:12+00:00Application exited with signal: terminated
+we40c
+2018-11-03 00:11:11+00:00Stage writing-2 game iRsRatFu2GNMjYS34 ended
+we40c
+2018-11-03 00:11:11+00:00round [object Object]starts
+we40c
+2018-11-03 00:11:11+00:00The game iRsRatFu2GNMjYS34 has ended
+we40c
+2018-11-03 01:10:18+00:00Game with a treatment: { stageDuration: 1000,
+we40c
+2018-11-03 01:10:18+00:00 playerCount: 2,
+we40c
+2018-11-03 01:10:18+00:00 nRounds: 3,
+we40c
+2018-11-03 01:10:18+00:00 hasPrompt: true } will start, with workers [ 'DanTEst4', 'DanTEst2' ]
+we40c
+2018-11-03 01:10:19+00:00game kYuXsLe5F3XCa5SnE started
+we40c
+2018-11-03 01:10:19+00:00round [object Object]starts
+we40c
+2018-11-03 01:10:19+00:00stage writing-0 of game kYuXsLe5F3XCa5SnE started
+we40c
+2018-11-03 01:11:15+00:00Stage writing-0 game kYuXsLe5F3XCa5SnE ended
+we40c
+2018-11-03 01:11:16+00:00stage writing-1 of game kYuXsLe5F3XCa5SnE started
+we40c
+2018-11-03 01:11:43+00:00Stage writing-1 game kYuXsLe5F3XCa5SnE ended
+we40c
+2018-11-03 01:11:43+00:00stage writing-2 of game kYuXsLe5F3XCa5SnE started
+we40c
+2018-11-03 01:12:20+00:00Stage writing-2 game kYuXsLe5F3XCa5SnE ended
+we40c
+2018-11-03 01:12:20+00:00round [object Object]starts
+we40c
+2018-11-03 01:12:20+00:00The game kYuXsLe5F3XCa5SnE has ended
+we40c
+2018-11-03 01:32:17+00:00Game with a treatment: { stageDuration: 1000,
+we40c
+2018-11-03 01:32:17+00:00 playerCount: 2,
+we40c
+2018-11-03 01:32:17+00:00 nRounds: 3,
+we40c
+2018-11-03 01:32:17+00:00 hasPrompt: true } will start, with workers [ 'A6Z0BO3QWHX8U', 'DanTest5' ]
+we40c
+2018-11-03 01:32:18+00:00game B4h4AGtPqtbj7kfgw started
+we40c
+2018-11-03 01:32:18+00:00round [object Object]starts
+we40c
+2018-11-03 01:32:18+00:00stage writing-0 of game B4h4AGtPqtbj7kfgw started
+we40c
+2018-11-03 01:38:49+00:00Stage writing-0 game B4h4AGtPqtbj7kfgw ended
+we40c
+2018-11-03 01:38:49+00:00stage writing-1 of game B4h4AGtPqtbj7kfgw started
+we40c
+2018-11-03 01:42:10+00:00Stage writing-1 game B4h4AGtPqtbj7kfgw ended
+we40c
+2018-11-03 01:42:10+00:00stage writing-2 of game B4h4AGtPqtbj7kfgw started
+we40c
+2018-11-03 01:52:16+00:00Stage writing-2 game B4h4AGtPqtbj7kfgw ended
+we40c
+2018-11-03 01:52:16+00:00round [object Object]starts
+we40c
+2018-11-03 01:52:16+00:00The game B4h4AGtPqtbj7kfgw has ended
+we40c
+2018-11-03 13:02:50+00:00Game with a treatment: { stageDuration: 1000,
+we40c
+2018-11-03 13:02:50+00:00 playerCount: 2,
+we40c
+2018-11-03 13:02:50+00:00 nRounds: 3,
+we40c
+2018-11-03 13:02:50+00:00 hasPrompt: true } will start, with workers [ 'A12SJSJIUR3A23', 'A3KG9SM9F0X8RL' ]
+we40c
+2018-11-03 13:02:51+00:00game gJC2aK6XgPtncBYf8 started
+we40c
+2018-11-03 13:02:51+00:00round [object Object]starts
+we40c
+2018-11-03 13:02:51+00:00stage writing-0 of game gJC2aK6XgPtncBYf8 started
+we40c
+2018-11-03 13:19:33+00:00Stage writing-0 game gJC2aK6XgPtncBYf8 ended
+we40c
+2018-11-03 13:19:33+00:00stage writing-1 of game gJC2aK6XgPtncBYf8 started
+we40c
+2018-11-03 13:36:14+00:00Stage writing-1 game gJC2aK6XgPtncBYf8 ended
+we40c
+2018-11-03 13:36:14+00:00stage writing-2 of game gJC2aK6XgPtncBYf8 started
+we40c
+2018-11-03 13:52:55+00:00Stage writing-2 game gJC2aK6XgPtncBYf8 ended
+we40c
+2018-11-03 13:52:55+00:00round [object Object]starts
+we40c
+2018-11-03 13:52:55+00:00The game gJC2aK6XgPtncBYf8 has ended
