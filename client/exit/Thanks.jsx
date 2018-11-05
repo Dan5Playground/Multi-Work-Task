@@ -7,7 +7,9 @@ export default class Thanks extends React.Component {
   
   render() {
     const { player, game } = this.props;
-    return (
+
+
+      return (
       <Centered>
         <div className="game finished">
           <div className="pt-non-ideal-state">

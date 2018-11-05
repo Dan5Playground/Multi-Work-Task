@@ -57,16 +57,16 @@ Empirica.gameInit((game, treatment, players) => {
 
     // Dan : we'll have 1 round, each task is 3 stage
     const round = game.addRound();
-    let numRounds = 1;
-    // Dan : defined numRounds just in case nRounds is not specified in
+    let numStages = 1;
+    // Dan : defined numStages just in case nRounds is not specified in
     // the treatment
     if (game.treatment.nRounds > 1)
     {
-        numRounds = game.treatment.nRounds;
+        numStages = game.treatment.nRounds;
     }
 
     // Dan :
-    _.times(numRounds, i => {
+    _.times(numStages, i => {
         const stage = round.addStage({
             name: "writing-" + i.toString(),
             displayName: "Story " + (i+1).toString(),

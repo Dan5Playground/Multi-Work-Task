@@ -5,9 +5,12 @@ import {FormGroup, Intent, TextArea} from "@blueprintjs/core";
 
 export default class Sorry extends React.Component {
   static stepName = "Sorry";
+  state = {  feedback: ""};
 
-  render() {
+
+    render() {
     const { player, hasNext, onSubmit } = this.props;
+        const { feedback } = this.state;
     let msg;
     switch (player.exitStatus) {
       case "gameFull":
@@ -16,9 +19,7 @@ export default class Sorry extends React.Component {
       case "gameLobbyTimedOut":
         msg = "There were NOT enough players for the game to start..";
         break;
-      // case "playerLobbyTimedOut":
-      //   msg = "???";
-      //   break;
+
       case "playerEndedLobbyWait":
         msg =
           "You decided to stop waiting, we are sorry it was too long a wait.";
@@ -29,6 +30,7 @@ export default class Sorry extends React.Component {
     }
 
     return (
+
       <Centered>
         <div className="score">
           <h1>Sorry!</h1>
@@ -84,13 +86,13 @@ export default class Sorry extends React.Component {
           {/*This is not really needed .. all of these people failed to start the game .. if we allow them to submit, then their data will be deleted, we don't want that*/}
           <p>
             {hasNext ? (
-              <button
+              <buttonFZgameFullCSOP213093
                 className="pt-button pt-intent-primary"
                 type="button"
                 onClick={() => onSubmit()}
               >
                 Done
-              </button>
+              </buttonFZgameFullCSOP213093>
             ) : (
               ""
             )}
