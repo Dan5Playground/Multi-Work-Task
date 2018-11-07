@@ -48,15 +48,13 @@ export default class Sorry extends React.Component {
 
           {player.exitStatus === "gameLobbyTimedOut" ? (
             <p>
-              Please submit <em>{player._id}</em> as the survey code in order to
-              receive the $0.5 base payment for your time today.
+              Please submit <em>{player._id}</em> as the task code.
             </p>
           ) : null}
 
           {player.exitStatus === "gameFull" ? (
             <p>
-              Please submit <em>FZgameFullCSOP213093</em> as the survey code in
-              order to receive the $0.1 showing up bonus.
+              Please submit <em>FZgameFullCSOP213093</em> as the task code.
             </p>
           ) : null}
 

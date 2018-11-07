@@ -19,29 +19,33 @@ export default class Overview extends React.Component {
             <p>Note:</p>
             <ul>
                 {social?
-                    <li><strong>
-                        You will play this game simultaneously with{" "}
-                        <span style={{color:"#FF0000"}}>{treatment.playerCount - 1} </span>
-                        other participant(s) in real-time.
-                    </strong><em>  </em> </li>
+                    <li>
+                        <strong>
+                            You will play this game simultaneously with{" "}
+                            <span style={{color:"#FF0000"}}>{treatment.playerCount - 1} </span>
+                                other participant(s) in real-time.
+                        </strong>
+                    </li>
                     : null}
                 {social?
                     <li>
-                        If the other player drop off in the middle of the task,
+                        If the other player drop off in the middle of the task or stop responding,
                         <strong> please contact us to get the reward code.
                     </strong></li>
                     : null}
                 {social?
                     <li>
-                        You may need to wait up to <strong>15 minutes</strong> for the
-                        other player to show up.
+                        You may need to wait up to <strong>10 minutes</strong> for the
+                        other player to show up. You will be compensated for the waiting time (
+                        <span style={{color:"#FF0000"}}> $0.10 per minute</span>)
                     </li>
                     : null}
                 <li>This task contains<strong> 3 </strong>stages.
                     For each stage,
                     {treatment.hasPrompt? " you will be given a new prompt and " : "" }
-
-                    please write at least <strong> 6 actions</strong> for each story.
+                    you need to write a new story from scratch.
+                    Please write at least <strong> 6 actions</strong> for each story.
+                    <span style={{color:"#FF0000"}}> Bonus will be $1.00 per story.</span>
                 </li>
                 <li>Use <strong>a simple sentence</strong> describing one character
                     taking one action, e.g. : <em> Anne introduced herself.</em></li>
@@ -50,9 +54,9 @@ export default class Overview extends React.Component {
                 <li>Try to use the <strong>past tense </strong> of all the verbs.</li>
                 <li>
                     <strong>
-                    <span style={{color:"#FF0000"}}>Extra credits will be given to the
-                        creative and coherent stories.
-                    </span>
+                    Extra
+                        <span style={{color:"#FF0000"}}> $1.00  </span>
+                        will be given to the creative and coherent stories.
                     </strong>
                 </li>
                 <li>

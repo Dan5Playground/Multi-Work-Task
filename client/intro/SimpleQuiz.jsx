@@ -27,9 +27,9 @@ export default class Quiz extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
     const { game } = this.props;
-    console.log("Submitted the quiz");
+    //console.log("Submitted the quiz");
       if (
-          this.state.nStories !== (game.treatment.nRounds).toString() ||
+          this.state.nStories !== (game.treatment.nStories).toString() ||
           this.state.nParticipants !== (game.treatment.playerCount).toString()||
           this.state.horse !== "white"
       ) {

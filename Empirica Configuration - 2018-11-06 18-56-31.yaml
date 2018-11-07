@@ -1,0 +1,169 @@
+treatments:
+  - name: solo_with_prompt_dragon
+    factorIds:
+      - EghHMaYZgSoxXxqjZ
+      - Fpnx83ABe53YKceLs
+      - Lr2YzbCWPNPMRa3FK
+      - oDYduS8RZQWJhpPz6
+      - oHoQ8ScGkDLfxqpa6
+      - L3nzGM6PDJuTayyx3
+      - aAjYzMSCyfBTBeikH
+  - name: solo_no_prompt_dragon
+    factorIds:
+      - EghHMaYZgSoxXxqjZ
+      - Fpnx83ABe53YKceLs
+      - Lr2YzbCWPNPMRa3FK
+      - xzx5ifm9aiSZNQ7NQ
+      - oHoQ8ScGkDLfxqpa6
+      - L3nzGM6PDJuTayyx3
+      - aAjYzMSCyfBTBeikH
+  - name: pair_with_prompt_dragon
+    factorIds:
+      - dQRLwx6Q9HYnsLGBc
+      - Fpnx83ABe53YKceLs
+      - Lr2YzbCWPNPMRa3FK
+      - oDYduS8RZQWJhpPz6
+      - oHoQ8ScGkDLfxqpa6
+      - L3nzGM6PDJuTayyx3
+      - aAjYzMSCyfBTBeikH
+  - name: pair_no_prompt_dragon
+    factorIds:
+      - dQRLwx6Q9HYnsLGBc
+      - Fpnx83ABe53YKceLs
+      - Lr2YzbCWPNPMRa3FK
+      - xzx5ifm9aiSZNQ7NQ
+      - oHoQ8ScGkDLfxqpa6
+      - L3nzGM6PDJuTayyx3
+      - aAjYzMSCyfBTBeikH
+factorTypes:
+  - _id: NjK2J9Ym5tYpRTuSc
+    name: playerCount
+    description: The Number of players participating in the given game.
+    required: true
+    type: Integer
+    min: 1
+  - _id: 4vv99gYT4af3tKjJF
+    name: stageDuration
+    description: >-
+      Specifies how many seconds for each decision stage (each story in this
+      experiment)
+    required: false
+    type: Integer
+    min: 1
+    max: 10000
+  - _id: diyFvtwpSn97pqCbn
+    name: nStories
+    description: number of times the participants need to write
+    required: false
+    type: Integer
+    min: 1
+    max: 100
+  - _id: RCL6ENS45pE6sr3YW
+    name: hasPrompt
+    description: >-
+      boolean value to decide whether we should give prompts to the
+      participants.
+    required: false
+    type: Boolean
+  - _id: SSR7Fahb5oTPiH3GJ
+    name: scenarioIndex
+    description: Decide which scenario to use.
+    required: false
+    type: Integer
+    min: 1
+    max: 100
+  - _id: eqWsAjWj7NngGKud4
+    name: randomPrompt
+    description: Whether the order or the prompt should be fixed or randomized
+    required: false
+    type: Boolean
+  - _id: ajyTWk2g2QeqPnBDW
+    name: randomCharOrder
+    description: Whether the order of the character should be fixed or randomized
+    required: false
+    type: Boolean
+factors:
+  - _id: EghHMaYZgSoxXxqjZ
+    name: solo
+    value: 1
+    factorTypeId: NjK2J9Ym5tYpRTuSc
+  - _id: dQRLwx6Q9HYnsLGBc
+    name: pair
+    value: 2
+    factorTypeId: NjK2J9Ym5tYpRTuSc
+  - _id: QpBPrv3hTwHcGLusg
+    name: 5min
+    value: 300
+    factorTypeId: 4vv99gYT4af3tKjJF
+  - _id: wWruq22z7ZcLBwnsj
+    name: 20min
+    value: 1200
+    factorTypeId: 4vv99gYT4af3tKjJF
+  - _id: Lr2YzbCWPNPMRa3FK
+    name: repeat
+    value: 3
+    factorTypeId: diyFvtwpSn97pqCbn
+  - _id: oDYduS8RZQWJhpPz6
+    name: 'true'
+    value: true
+    factorTypeId: RCL6ENS45pE6sr3YW
+  - _id: xzx5ifm9aiSZNQ7NQ
+    name: 'false'
+    value: false
+    factorTypeId: RCL6ENS45pE6sr3YW
+  - _id: YE87gBWyFijhjkSvS
+    name: houseOfCard
+    value: 1
+    factorTypeId: SSR7Fahb5oTPiH3GJ
+  - _id: oHoQ8ScGkDLfxqpa6
+    name: dragonGame
+    value: 2
+    factorTypeId: SSR7Fahb5oTPiH3GJ
+  - _id: GYLNpAnAyLLrxeZWe
+    name: instructionExample
+    value: 3
+    factorTypeId: SSR7Fahb5oTPiH3GJ
+  - _id: og3px7CZxg5DaiWoZ
+    name: negotiation
+    value: 4
+    factorTypeId: SSR7Fahb5oTPiH3GJ
+  - _id: L3nzGM6PDJuTayyx3
+    name: 'true'
+    value: true
+    factorTypeId: eqWsAjWj7NngGKud4
+  - _id: YQmpZahLYMq9F5vcD
+    name: 'false'
+    value: false
+    factorTypeId: eqWsAjWj7NngGKud4
+  - _id: aAjYzMSCyfBTBeikH
+    name: 'true'
+    value: true
+    factorTypeId: ajyTWk2g2QeqPnBDW
+  - _id: EjbNhW64fBRtqdoPQ
+    name: 'false'
+    value: false
+    factorTypeId: ajyTWk2g2QeqPnBDW
+  - _id: KSM45JanRKJ7RgynG
+    name: single
+    value: 1
+    factorTypeId: diyFvtwpSn97pqCbn
+  - _id: Fpnx83ABe53YKceLs
+    name: 30min
+    value: 1800
+    factorTypeId: 4vv99gYT4af3tKjJF
+lobbyConfigs:
+  - name: startSingleAfter10mins
+    timeoutType: lobby
+    timeoutInSeconds: 600
+    timeoutStrategy: ignore
+    gameLobbyIds: []
+  - name: failAfter15min
+    timeoutType: lobby
+    timeoutInSeconds: 900
+    timeoutStrategy: fail
+    gameLobbyIds: []
+  - name: debug_startSingleAfter30s
+    timeoutType: lobby
+    timeoutInSeconds: 30
+    timeoutStrategy: ignore
+    gameLobbyIds: []

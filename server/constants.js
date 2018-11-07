@@ -21,21 +21,20 @@ export const SceneSettings = [
         ]
     },
     {// Scene 2
-        sceneDesc : "A small village has almost been destroyed by a dragon. All " +
-            "the treasures the villagers possessed were taken. The only knight in" +
-            " the village needs to defeat the dragon to rebuild the village. The " +
-            "knight needs Frank the Fantastic, a well-known wizard, to help build" +
-            " a magic sword that will be able to defeat the dragon. Frank need the" +
-            " ingredients for the steel from Gerald the Greedy.",
+        sceneDesc : "A small village has almost been destroyed by a dragon. All the " +
+            "treasures the villagers possessed were taken. The knight, K, " +
+            "in the village seeks to defeat the dragon to rebuild the village." +
+            " But first, K needs a magic sword which can only be built using the raw" +
+            " steel from Gerald, who is a merchant in the village",
         characters : [
-            {name : "Frank",
+            {name : "K",
                 // format for prompts :  Char is PROMPT
                 prompt : [
                     "a manipulative person who always attempts to control a situation" +
                     " or a person",
                     "an ethical and creative person",
                     "Charlie's ex-girlfriend"]},
-            {name : "Charlie",
+            {name : "Gerald",
                 prompt : [
                     "a manipulative person who always attempts to control a situation" +
                     " or a person",

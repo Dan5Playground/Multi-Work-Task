@@ -44,7 +44,9 @@ export default class SocialInteractions extends React.Component {
                   <Timer stage={stage} />
               </div>
           </div>
+
         </div>
+
       </div>
     );
   }

@@ -21,20 +21,25 @@ Empirica.gameInit((game, treatment, players) => {
     "Game with a treatment: ",
     treatment,
     " will start, with workers",
-    _.pluck(players, "id")
+    _.pluck(players, "id"),
+      _.pluck(players, "_id")
   );
 
   // Dan : UI related initiation better happens here
     let charNames = [];
     let charPrompts = {};
+    const scenarioIndex = game.treatment.scenarioIndex - 1 ;
+
     // Dan : fix the scenario for now. May change it later
-    SceneSettings[0].characters.forEach((character) => {
+    SceneSettings[scenarioIndex].characters.forEach((character) => {
         charNames.push(character.name);
         // Dan : use random prompt for now
-        charPrompts[character.name] = _.shuffle(rdmPrompt); //character.prompt;
+        if (game.treatment.randomCharOrder)
+            charPrompts[character.name] = _.shuffle(rdmPrompt); //character.prompt;
     });
     // shuffle the name of all the characters.
-    _.shuffle(charNames);
+    if (game.treatment.randomCharOrder)
+        charNames = _.shuffle(charNames);
     // Dan : init player
     // Dan : add avatar
     // to do more go to https://jdenticon.com/#icon-D3
@@ -46,23 +51,24 @@ Empirica.gameInit((game, treatment, players) => {
         player.set("name", charNames[i]);
         player.set("avatar", `/avatars/jdenticon/${avatarNames[i]}`);
         player.set("nameColor", nameColor[i]);
-        player.set("score", 0);
+        player.set("score", 0); // computed by the number of sentences they wrote
         player.set("satisfied", false)
     });
 
     // Dan : play the sound on the UI when the game starts to remind the user
     // Dan : note - need to restart the batch to add new var in server
     game.set("justStarted", true);
-    game.set("scenario", SceneSettings[0].sceneDesc);
+    game.set("scenario", SceneSettings[scenarioIndex].sceneDesc);
 
     // Dan : we'll have 1 round, each task is 3 stage
     const round = game.addRound();
     let numStages = 1;
     // Dan : defined numStages just in case nRounds is not specified in
     // the treatment
-    if (game.treatment.nRounds > 1)
+    if (game.treatment.nStories > 1)
     {
-        numStages = game.treatment.nRounds;
+        numStages = game.treatment.nStories
+        ;
     }
 
     // Dan :
